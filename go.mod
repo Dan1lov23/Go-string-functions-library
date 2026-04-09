@@ -1,3 +1,3 @@
-module sF
+module sf
 
 go 1.25.0
