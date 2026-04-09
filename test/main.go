@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"func/strFunc"
+)
 
 func main() {
-	
+	fmt.Println(strFunc.ReverseStr("golang"))
 }
