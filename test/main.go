@@ -7,4 +7,5 @@ import (
 
 func main() {
 	fmt.Println(strFunc.ReverseStr("golang"))
+	fmt.Println(strFunc.AddElementInString("lol", 3, "i"))
 }
