@@ -7,8 +7,8 @@ import (
 
 func main() {
 	fmt.Println(strFunc.ReverseStr("golang"))
-	fmt.Println(strFunc.AddElementInString("golang", 3, "i"))
-	fmt.Println(strFunc.DeleteElementInString("golang", 2))
-	fmt.Println(strFunc.ReplaceElementInString("golang", 5, "d"))
+	fmt.Println(strFunc.AddElement("golang", 3, "i"))
+	fmt.Println(strFunc.DeleteElement("golang", 2))
+	fmt.Println(strFunc.ReplaceElement("golang", 5, "d"))
 }
 
