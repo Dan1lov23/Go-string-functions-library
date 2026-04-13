@@ -60,6 +60,9 @@ func CheckSubStringInclude(str string, subString string) (isCheck bool) {
 
 	for a := 0; a < len(str); a++ {
 		checkString := string(str[a]);
+		if checkString == subString {
+			return true
+		}
 		for b := a + 1; b < len(str); b++ {
 			checkString += string(str[b])
 			if checkString == subString {
@@ -72,3 +75,21 @@ func CheckSubStringInclude(str string, subString string) (isCheck bool) {
 
 }
 
+func SubStringIncludeCounter(str string, subString string) (counter int) {
+
+	for a := 0; a < len(str); a++ {
+		checkString := string(str[a]);
+		if checkString == subString {
+			counter++
+		}
+		for b := a + 1; b < len(str); b++ {
+			checkString += string(str[b])
+			if checkString == subString {
+				counter++
+			}
+		}
+	}
+
+	return
+
+}
