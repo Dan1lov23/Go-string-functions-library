@@ -1,5 +1,7 @@
 package strFunc
 
+//import "fmt"
+
 func ReverseStr(str string) (reverseStr string) {
 
 	for index := len(str) - 1; index >= 0; index-- {
@@ -51,6 +53,22 @@ func ReplaceElement(str string, position int, element string) (newStr string) {
 	}
 
 	return
+
+}
+
+func CheckSubString(str string, subString string) (isCheck bool) {
+
+	for a := 0; a < len(str); a++ {
+		checkString := string(str[a]);
+		for b := a + 1; b < len(str); b++ {
+			checkString += string(str[b])
+			if checkString == subString {
+				return true
+			}
+		}
+	}
+
+	return false
 
 }
 
