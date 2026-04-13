@@ -12,4 +12,5 @@ func main() {
 	fmt.Println(strFunc.ReplaceElement("golang", 5, "d"))
 	fmt.Println(strFunc.CheckSubStringInclude("golang", "g"))
 	fmt.Println(strFunc.SubStringIncludeCounter("golang", "g"))
+	fmt.Println(strFunc.PalindromeCheck("golang"))
 }

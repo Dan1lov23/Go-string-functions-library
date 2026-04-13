@@ -2,16 +2,6 @@ package strFunc
 
 //import "fmt"
 
-func ReverseStr(str string) (reverseStr string) {
-
-	for index := len(str) - 1; index >= 0; index-- {
-		reverseStr += string(str[index])
-	}
-
-	return
-
-}
-
 func AddElement(str string, position int, newElement string) (newStr string) {
 
 	for index := 0; index <= len(str); index++ {
@@ -91,5 +81,27 @@ func SubStringIncludeCounter(str string, subString string) (counter int) {
 	}
 
 	return
+
+}
+
+func ReverseStr(str string) (reverseStr string) {
+
+	for index := len(str) - 1; index >= 0; index-- {
+		reverseStr += string(str[index])
+	}
+
+	return
+
+}
+
+func PalindromeCheck(str string) (flag bool) {
+
+	reverseStr := ""
+
+	for index := len(str) - 1; index >= 0; index-- {
+		reverseStr += string(str[index])
+	}
+
+	return str == reverseStr
 
 }
