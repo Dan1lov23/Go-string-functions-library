@@ -10,6 +10,6 @@ func main() {
 	fmt.Println(strFunc.AddElement("golang", 3, "i"))
 	fmt.Println(strFunc.DeleteElement("golang", 2))
 	fmt.Println(strFunc.ReplaceElement("golang", 5, "d"))
-	fmt.Println(strFunc.CheckSubString("golang", "go"))
+	fmt.Println(strFunc.CheckSubStringInclude("golang", "go"))
 }
 

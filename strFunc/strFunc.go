@@ -56,7 +56,7 @@ func ReplaceElement(str string, position int, element string) (newStr string) {
 
 }
 
-func CheckSubString(str string, subString string) (isCheck bool) {
+func CheckSubStringInclude(str string, subString string) (isCheck bool) {
 
 	for a := 0; a < len(str); a++ {
 		checkString := string(str[a]);
